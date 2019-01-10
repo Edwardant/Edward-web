@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title></title>
+      <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+<div class="logo-content">
+	<a href="index.html"><img src="Assets/logo.jpg"/></a>
+	<input type="text" name="search" placeholder="Search for products or content: Wool Coats, Fleece, HEATTEACH,....">
+
+</div>
+
+      <nav>
+            <div>
+                  <i class="navigation"></i>
+            </div>
+
+            <ul>
+                 
+                  <li><a href="Women.html">Women<i class="navigation"></i></	a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="Men.html">Men<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                   <li><a href="Kids.html">KIDS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="Baby.html">Company<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Our history</a></li>
+                              <li><a href="#">Corporate Information</a></li>
+                              <li><a href="#">Business Overview</a></li>
+                              <li><a href="#">Management Policy</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="#">NEW ARRIVALS & PROMOTIONS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+            </ul>
+      </nav>
+
+      <script type="text/javascript">
+
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+      </script>
+	 
+
+<h1>TRENDING</h1> 
+
+<div class="gallery">
+<img src="Assets/k1.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k2.jpg"align="middle"style="margin-left:200px"> 
+<img src="Assets/k3.jpg"align="middle"style="margin-left:200px"> 
+<img src="Assets/k4.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k5.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k6.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k7.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k8.jpg"align="middle"style="margin-left:200px">
+<img src="Assets/k9.jpg"align="middle"style="margin-left:200px"> 
+
+</div>
+<div class="footer">
+  <p>© UNIQLO CO. LTD. All rights reserved.</p>
+</div>
+</body>
+</html>

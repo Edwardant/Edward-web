@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title></title>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="logo-content">
+	<a href="index.html"><img src="Assets/logo.jpg"/></a>
+	<input type="text" name="search" placeholder="Search for products or content: Wool Coats, Fleece, HEATTEACH,....">
+
+</div>
+
+      <nav>
+            <div>
+                  <i class="navigation"></i>
+            </div>
+
+            <ul>
+                 
+                  <li><a href="Women.html">Women<i class="navigation"></i></	a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="Men.html">Men<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                   <li><a href="Kids.html">KIDS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="Baby.html">Company<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Our history</a></li>
+                              <li><a href="#">Corporate Information</a></li>
+                              <li><a href="#">Business Overview</a></li>
+                              <li><a href="#">Management Policy</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="#">NEW ARRIVALS & PROMOTIONS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+            </ul>
+      </nav>
+
+      <script type="text/javascript">
+
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+      </script>
+	 
+<div class="slideshow" style="max-width:650px"
+  <img class="mySlides" src="Assets/Ma1.jpg" style="width:150%">
+  <img class="mySlides" src="Assets/Ma3.jpg" style="width:150%">
+  <img class="mySlides" src="Assets/Ma4.jpg" style="width:150%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); 
+}
+</script>
+
+<div class="main-cont">
+	<div id="text1">
+		<h1>THIS WEEKS MUST BUY<h1>
+		</div>
+	<div id="sec2-photo">
+		<img src="Assets/ma5.jpg" style="width:30%">
+		
+		<img src="Assets/ma8.jpg" style="width:30%">
+		
+		<img src="Assets/ma6.jpg" style="width:30%">
+	</div>
+	
+<div class="second-cont">
+	<div id="text2">
+		<h1>NEW ARRIVALS<h1>
+		</div>
+	<div id="sec3-photo">
+		<img src="Assets/ma9.jpg" style="width:30%">
+		
+		<img src="Assets/ma11.jpg" style="width:30%">
+		
+		<img src="Assets/ma10.jpg" style="width:30%">
+	</div>
+<div class="line">	
+<div id="horizontal-line"</div>
+
+<div class="footer">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="wrapper">
+  <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
+  <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+  <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+</div>
+  <p>© UNIQLO CO. LTD. All rights reserved.</p>
+</div>
+
+</footer>
+</body>
+</html>

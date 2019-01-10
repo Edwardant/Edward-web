@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title></title>
+      <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+<div class="logo-content">
+	<a href="uniqlo design.html"><img src="Assets/logo.jpg"/></a>
+	<input type="text" name="search" placeholder="Search for products or content: Wool Coats, Fleece, HEATTEACH,....">
+
+</div>
+
+      <nav>
+            <div>
+                  <i class="navigation"></i>
+            </div>
+
+            <ul>
+                 
+                  <li><a href="Women.html">Women<i class="navigation"></i></	a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                  <li><a href="Men.html">Men<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+                   <li><a href="Kids.html">KIDS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="Baby.html">Company<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Our history</a></li>
+                              <li><a href="#">Corporate Information</a></li>
+                              <li><a href="#">Business Overview</a></li>
+                              <li><a href="#">Management Policy</a></li>
+                        </ul>
+                  </li> 
+				  <li><a href="#">NEW ARRIVALS & PROMOTIONS<i class="navigation"></i></a>
+                        <ul>
+                              <li><a href="#">Down Coats, Jackets & Vests</a></li>
+                              <li><a href="#">Parkas</a></li>
+                              <li><a href="#">Coats & Jackets</a></li>
+                              <li><a href="#">Jumpers & Cardigans</a></li>
+                        </ul>
+                  </li>
+            </ul>
+      </nav>
+
+      <script type="text/javascript">
+
+      $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+
+      $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+
+      $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+
+      </script>
+	 
+<div class="aboutus">
+	<div id="text3">
+		<h1>ABOUT UNIQLO<h1>
+		<h3>UNIQLO is a clothing apparel company, which was originally founded in Yamaguchi, Japan in 1949 as a textiles manufacturer. Now it is a global brand with over 1000 stores around the world. Redefining clothing, with a focus on quality and textiles which has been unwavered since the companyâ€™s origins in 1949.<h3>
+		</div>
+		
+  <iframe src="https://www.youtube.com/watch?v=5puYPe9ek6o"
+   width="560" height="315" frameborder="0" allowfullscreen></iframe>
+   
+<div class="row">
+  <div class="column">
+  <h3>CORPORATE INFORMATION<h3>
+    <img src="Assets/c1.jpg" alt="Snow" style="width:20%">
+	<p>The company profile.<p>
+  </div>
+  <div class="column">
+  <h3>BUSINESS OVERVIEW<h3>
+    <img src="Assets/c2.jpg" alt="Forest" style="width:20%">
+	<p>The current status of UNIQLO's business.<p>
+  </div>
+  <div class="column">
+  <h3>MANAGEMENT POLICY<h3>
+    <img src="Assets/c3.jpg" alt="Mountains" style="width:20%">
+	<p>Details of the operation of Fast Retailing Group.<p>
+  </div>
+</div>
+  <div class="column">
+	<h3>IR INFORMATION<h3>
+    <img src="Assets/c4.jpg" alt="Mountains" style="width:20%">
+	<p>Investor relations information on Fast Retailing Group.<p>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>© UNIQLO CO. LTD. All rights reserved.</p>
+</div>
+</body>
+</html>
